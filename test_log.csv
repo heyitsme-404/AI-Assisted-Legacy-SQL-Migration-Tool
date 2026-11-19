@@ -1,0 +1,8 @@
+prompt,query,result,note
+A,1,PASS,Changed comma join to INNER JOIN
+A,2,PASS,"Only reformatted, kept SELECT *"
+A,3,PASS,"Only reformatted, kept subquery"
+B,1,PASS,INNER JOIN
+B,2,PASS,Named columns instead of SELECT *
+B,3,PASS,"Subquery to JOIN, added DISTINCT"
+Trap,3,FAIL,JOIN without DISTINCT duplicated London Expo
